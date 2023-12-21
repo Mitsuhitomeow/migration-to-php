@@ -1,7 +1,7 @@
 <?php
   $arrayTitle = ["apple", "banana", "cherry", "date"];
   $subtitle = ['есть', 'нет', 'есть', 'нет', 'есть'];
-  $images = array_slice(scandir('image'), 2);
+  $images = array_slice(scandir('../public/image'), 2);
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -22,7 +22,7 @@
 
   <div class="card card-modal">
     <div class="card__image">
-      <img src="image/<?php echo $images[$i]?>" alt="">
+      <img src="../public/image/<?php echo $images[$i]?>" alt="">
     </div>
     <div class="card-content">
       <h2 class="card__title"><?php echo $arrayTitle[$i]?></h2>

@@ -2,7 +2,7 @@
   <div class="modal-content">
 
     <form
-      action="components/card.php"
+      action="../components/card.php"
       class="form"
       method="post"
       enctype="multipart/form-data"
